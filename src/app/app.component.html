@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<h5>
+  {{ person.name}}
+  {{ person.age }}
+  {{ age }}
+</h5>
+<input type="text" [(ngModel)]="age">
+<button (click)="setAge(10)">Click Me!</button>
+<hr>
+<app-users></app-users>
