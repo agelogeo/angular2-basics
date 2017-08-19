@@ -9,4 +9,4 @@
 <input type="text" [(ngModel)]="age">
 <button (click)="setAge(10)">Click Me!</button>
 <hr>
-<app-users></app-users>
+<app-users [users]="registeredUsers" (alertThrown)="onChildAlert($event)"></app-users>

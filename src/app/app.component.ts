@@ -13,11 +13,17 @@ export class AppComponent {
     age: 21
   };
 
+  registeredUsers = ['Giorgos' , 'Sofia' , 'Vaggelis', 'Zoi'];
+
   getName(){
-    return 'George'
-  };
+    return 'George';
+  }
 
   setAge(age: number){
     ++this.age;
-  };
+  }
+
+  onChildAlert(message: string){
+    alert(message);
+  }
 }
